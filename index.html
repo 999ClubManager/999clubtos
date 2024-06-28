@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #8971d1;
             color: #fff;
             margin: 0;
             padding: 0;
@@ -64,6 +64,43 @@
         a:active {
             color: #34107d; /* Active link color */
         }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Pokaż powyżej tekstu */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            white-space: nowrap; /* Zapobiega łamaniu tekstu */
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%; /* Na dole narzędzia dymkowego */
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -74,36 +111,36 @@
 
     <section>
         <h2>Products and Compatibility:</h2>
-    <p>a. Our products are made for Android users. If an iOS user purchases our products, they may either receive an Android account or be eligible for a 50% cash refund, at our discretion.</p>
+    <p>• Our products are made for Android users. If an iOS user purchases our products, they may either receive an Android account or be eligible for a 50% cash refund, at our discretion.</p>
 
         <h2>Refund Policy:</h2>
-    <p>a. Refunds are subject to the terms mentioned in Section 1.</p>
-      <p>b. Refund requests must be made within a reasonable timeframe and will be considered on a case-by-case basis.</p>
-        <p>c. Refunds will only be provided for issues related to the product's functionality, not for personal preferences or misuse.</p>
+    <p>• Refunds are subject to the terms mentioned in Section 1.</p>
+      <p>• Refund requests must be made within a reasonable timeframe and will be considered on a case-by-case basis.</p>
+        <p>• Refunds will only be provided for issues related to the product's functionality, not for personal preferences or misuse.</p>
 
         <h2>Charitable Contributions:</h2>
-    <p>a. A percentage of our earnings is dedicated to charitable donations.</p>
-      <p>b. By purchasing from 999CLUB, you contribute to our charitable initiatives, supporting causes that make a positive impact on the community.</p>
+    <p>• A percentage of our earnings is dedicated to <a href="https://www.siepomaga.pl/" class="tooltip">charitable donations.<span class="tooltiptext">https://siepomaga.pl/</span> </a> </p>
+      <p>• By purchasing from 999CLUB, you contribute to our charitable initiatives, supporting causes that make a positive impact on the community.</p>
 
     <h2>Supported Game:</h2>
-    <p>a. 999CLUB products are specifically tailored for the game "Pixel Gun 3D." Compatibility with other games is not guaranteed.
+    <p>• 999CLUB products are specifically tailored for the game "<a href="https://pixelgun3d.com/" class="tooltip">Pixel Gun 3D. <span class="tooltiptext">https://pixelgun3d.com/</span> </a>" Compatibility with other games is not guaranteed.
 </p>
 
     <h2>Appeals:</h2>
-    <p>a. Customers have a one-week window to appeal any issues with their purchase.</p>
-      <p>b. After the one-week period, 999CLUB will not be obligated to take further actions or entertain appeals.</p>
+    <p>• Customers have a one-week window to appeal any issues with their purchase.</p>
+      <p>• After the one-week period, 999CLUB will not be obligated to take further actions or entertain appeals.</p>
 
     <h2>Prohibited Activities:</h2>
     <p>a. Users are prohibited from engaging in any activities that violate the terms of service of Pixel Gun 3D or any applicable laws.</p>
 
     <h2>Modification of Terms:</h2>
-    <p>a. 999CLUB reserves the right to modify or update these Terms of Service at any time.</p>
-      <p>b. Users will be notified of any changes, and continued use of our services implies acceptance of the revised terms.</p>
+    <p>• 999CLUB reserves the right to modify or update these Terms of Service at any time.</p>
+      <p>• Users will be notified of any changes, and continued use of our services implies acceptance of the revised terms.</p>
 
     <h2>Termination:</h2>
-    <p>a. 999CLUB reserves the right to terminate or suspend services to any user found violating these terms without prior notice.</p>
+    <p>• 999CLUB reserves the right to terminate or suspend services to any user found violating these terms without prior notice.</p>
 
-    <h2>By using 999CLUB's services, you agree to abide by these Terms of Service. If you have any questions or concerns, please contact us at <a href="https://discord.com/channels/932616135151599667/1058074551898095796">Tickets</a>.</h2>
+    <h2>By using 999CLUB's services, you agree to abide by these Terms of Service. If you have any questions or concerns, please contact us at <a href="https://discord.com/channels/932616135151599667/1058074551898095796" class="tooltip">Tickets <span class="tooltiptext">https://discord.com/tickets/</span></a>.</h2>
 
     <h1>Thank you for being a part of 999CLUB!</h1>
     </footer>
