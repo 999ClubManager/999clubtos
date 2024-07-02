@@ -7,8 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #8971d1;
+            background-color: #3f3c52;
             color: #fff;
+            borded-radius: 12px;
             margin: 0;
             padding: 0;
         }
@@ -25,8 +26,8 @@
             margin: 35px auto;
             padding: 20px;
             background-color: #353344;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 60px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Dodanie cienia */
         }
 
         img {
@@ -34,12 +35,18 @@
             height: auto;
         }
 
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
         h2 {
             color: #681cff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         p {
             line-height: 1.6;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         footer {
@@ -63,6 +70,7 @@
         }
         a:active {
             color: #34107d; /* Active link color */
+        
         }
         .tooltip {
             position: relative;
@@ -72,24 +80,24 @@
         .tooltip .tooltiptext {
             visibility: hidden;
             background-color: black;
-            color: #fff;
+            color: #8f43e6;
             text-align: center;
             border-radius: 6px;
             padding: 5px;
             position: absolute;
             z-index: 1;
-            bottom: 125%; /* Pokaż powyżej tekstu */
+            bottom: 125%; 
             left: 50%;
             transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.3s;
-            white-space: nowrap; /* Zapobiega łamaniu tekstu */
+            white-space: nowrap; 
         }
 
         .tooltip .tooltiptext::after {
             content: "";
             position: absolute;
-            top: 100%; /* Na dole narzędzia dymkowego */
+            top: 100%; 
             left: 50%;
             transform: translateX(-50%);
             border-width: 5px;
@@ -105,9 +113,7 @@
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to 999CLUB! Before using our services, please read the following Terms of Service carefully.</h1>
-    </header>
+        <h1 style="text-align: center;">Welcome to 999CLUB! Before using our services, please read the following Terms of Service carefully.</h1>
 
     <section>
         <h2>Products and Compatibility:</h2>
@@ -131,7 +137,7 @@
       <p>• After the one-week period, 999CLUB will not be obligated to take further actions or entertain appeals.</p>
 
     <h2>Prohibited Activities:</h2>
-    <p>a. Users are prohibited from engaging in any activities that violate the terms of service of Pixel Gun 3D or any applicable laws.</p>
+    <p>• Users are prohibited from engaging in any activities that violate the terms of service of Pixel Gun 3D or any applicable laws.</p>
 
     <h2>Modification of Terms:</h2>
     <p>• 999CLUB reserves the right to modify or update these Terms of Service at any time.</p>
@@ -140,14 +146,10 @@
     <h2>Termination:</h2>
     <p>• 999CLUB reserves the right to terminate or suspend services to any user found violating these terms without prior notice.</p>
 
-    <h2>By using 999CLUB's services, you agree to abide by these Terms of Service. If you have any questions or concerns, please contact us at <a href="https://discord.com/channels/932616135151599667/1058074551898095796" class="tooltip">Tickets <span class="tooltiptext">https://discord.com/tickets/</span></a>.</h2>
-
-    <h1>Thank you for being a part of 999CLUB!</h1>
+    <h2 style="text-align: center;">By using 999CLUB's services, you agree to abide by these Terms of Service. If you have any questions or concerns, please contact us at <a href="https://discord.com/channels/932616135151599667/1058074551898095796" class="tooltip">Tickets </a>.</h2>
+        <h1 style="text-align: center;">Thank you for being a part of 999CLUB!</h1>
+        </section>
     </footer>
-
-</body>
-</html></p>
-    </section>
 
 </body>
 </html>
